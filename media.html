@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ99TMWBE7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SQ99TMWBE7');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа-партнерство | V-Enginees Team</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Rajdhani:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --bg-card: #0d0d0d;
+            --highlight: #d4af37;
+            --border: #1a1a1a;
+            --text-main: #f0f0f0;
+            --text-muted: #777;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Nav */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 5%; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(10px);
+            position: fixed; width: 100%; z-index: 1000; border-bottom: 1px solid var(--border);
+        }
+        .nav-logo { font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: 2px; }
+        .nav-logo span { color: var(--highlight); }
+
+        .wrapper { max-width: 1100px; margin: 0 auto; padding: 150px 5% 100px; }
+
+        .header { text-align: center; margin-bottom: 60px; }
+        .header h1 { font-family: 'Rajdhani', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase; letter-spacing: 5px; }
+        .header h1 span { color: var(--highlight); }
+
+        /* Levels Grid */
+        .levels-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .level-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 30px;
+            position: relative;
+            transition: 0.3s;
+        }
+        .level-card:hover { border-color: var(--highlight); transform: translateY(-5px); }
+        .level-badge {
+            background: var(--highlight); color: #000;
+            padding: 5px 15px; font-weight: 800; font-size: 0.7rem;
+            position: absolute; top: 0; right: 0; text-transform: uppercase;
+        }
+        .level-card h3 { font-family: 'Rajdhani', sans-serif; color: var(--highlight); font-size: 1.5rem; margin-bottom: 20px; text-transform: uppercase; }
+        .req-list { list-style: none; font-size: 0.85rem; color: #aaa; }
+        .req-list li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; }
+        .req-list li i { color: var(--highlight); margin-top: 4px; }
+        .platform-sep { margin: 15px 0; border-top: 1px solid #222; padding-top: 15px; font-weight: 600; color: #fff; font-size: 0.8rem; text-transform: uppercase; }
+
+        /* Rules Box */
+        .rules-box {
+            background: #000; border: 1px solid var(--highlight); padding: 40px; margin-bottom: 60px;
+        }
+        .rules-box h2 { font-family: 'Rajdhani', sans-serif; margin-bottom: 20px; color: var(--highlight); text-transform: uppercase; }
+        .rules-box p, .rules-box li { font-size: 0.9rem; color: #ccc; margin-bottom: 10px; }
+
+        /* Form Section */
+        .form-info {
+            background: var(--bg-card); padding: 40px; border-left: 4px solid var(--highlight);
+        }
+        .copy-text {
+            background: #050505; padding: 20px; border: 1px solid #222; 
+            font-family: monospace; color: var(--highlight); margin: 20px 0;
+            white-space: pre-wrap; font-size: 0.9rem;
+        }
+
+        .note { font-size: 0.8rem; color: var(--text-muted); font-style: italic; margin-top: 10px; }
+
+        .vk-link {
+            display: inline-block; margin-top: 20px; color: #fff; text-decoration: none;
+            font-weight: 700; border-bottom: 2px solid var(--highlight); transition: 0.3s;
+        }
+        .vk-link:hover { color: var(--highlight); }
+
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid var(--border); font-size: 0.8rem; color: #444; }
+
+        @media (max-width: 768px) { .wrapper { padding-top: 120px; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">V-ENGINEES<span>TEAM</span></a>
+    <div style="font-size: 0.8rem; font-weight: 600;"><a href="index.html" style="color: #fff; text-decoration: none;">ГЛАВНАЯ</a></div>
+</nav>
+
+<div class="wrapper">
+    <header class="header" data-aos="fade-down">
+        <h1>МЕДИА <span>ПАРТНЕРСТВО</span></h1>
+        <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-top: 10px;">Стань частью истории Kremil RP</p>
+    </header>
+
+    <div class="levels-grid">
+        <div class="level-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="level-badge">Новичок</div>
+            <h3>LEVEL I</h3>
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 50+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 3+ видео по проекту</li>
+                <li><i class="fas fa-check-circle"></i> От 500 просмотров на роликах</li>
+            </ul>
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 20+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 2+ видео (длительность 20с+)</li>
+            </ul>
+        </div>
+
+        <div class="level-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="level-badge">Продвинутый</div>
+            <h3>LEVEL II</h3>
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 200+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 10+ видео (от 500 просм. каждое)</li>
+                <li><i class="fas fa-check-circle"></i> 1 месяц сотрудничества</li>
+            </ul>
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 70+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 7+ видео (от 50 просм. каждое)</li>
+                <li><i class="fas fa-check-circle"></i> 1 месяц сотрудничества</li>
+            </ul>
+        </div>
+
+        <div class="level-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="level-badge">Элита</div>
+            <h3>LEVEL III</h3>
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 1000+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 50+ видео</li>
+                <li><i class="fas fa-check-circle"></i> 10 роликов от 5000 просмотров</li>
+            </ul>
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-check-circle"></i> 500+ подписчиков</li>
+                <li><i class="fas fa-check-circle"></i> 30+ видео (длительность 5м+)</li>
+                <li><i class="fas fa-check-circle"></i> От 500 просмотров на каждом</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="rules-box" data-aos="fade-up">
+        <h2>Соглашение о сотрудничестве</h2>
+        <p>Вступая в медиа-команду <strong>V-Enginees Team</strong>, вы обязуетесь соблюдать следующие правила:</p>
+        <ul style="padding-left: 20px; color: #aaa; font-size: 0.9rem;">
+            <li><strong>Эксклюзивность:</strong> Партнеру запрещено освещать другие проекты в жанре CRMP/SAMP.</li>
+            <li><strong>Тематика:</strong> Запрещена публикация контента, не связанного с Kremil RP или игровой индустрией (за нарушение — немедленное снятие).</li>
+            <li><strong>Репутация:</strong> Запрещено деструктивное поведение, оскорбление аудитории и дискредитация проекта.</li>
+            <li><strong>Активность:</strong> Если партнер не проявляет активности более 2 месяцев, он снимается с поста.</li>
+            <li><strong>Восстановление:</strong> В течение 1 недели после снятия за неактивность партнер может вернуться с сохранением уровня (например, LEVEL II). По истечении недели возврат возможен только на LEVEL I.</li>
+            <li><strong>Другие платформы:</strong> Мы открыты для авторов в <strong>VK Видео, Yappy</strong> и других сервисов. Критерии обсуждаются индивидуально.</li>
+        </ul>
+    </section>
+
+    <div class="form-info" data-aos="fade-up">
+        <h3>КАК ПОДАТЬ ЗАЯВКУ?</h3>
+        <p>Отправьте сообщение в личные сообщения нашей группы ВК по следующей форме:</p>
+        <div class="copy-text">#Сотрудничество
+1. Ваш ник:
+2. Ваш сервер:
+3. Расскажите о себе: (мин. 50 символов)
+4. Ваша платформа:
+5. Ваш канал: (ссылка)
+6. Ваша статистика канала: (скриншоты)</div>
+        
+        <p class="note">Примечание: Даже если ваши показатели ниже требуемых, мы рекомендуем подать заявку. Мы оцениваем потенциал, качество монтажа и харизму автора!</p>
+        
+        <a href="https://vk.com/kremilrp" target="_blank" class="vk-link"><i class="fab fa-vk"></i> ПЕРЕЙТИ К ПОДАЧЕ ЗАЯВКИ</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 V-Enginees Team | Media Partnership Department<br>
+    Все права на контент принадлежат их авторам и студии.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once: true, duration: 1000 });</script>
+
+</body>
+
+</html>

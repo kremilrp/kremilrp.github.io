@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ99TMWBE7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SQ99TMWBE7');
+</script>
+    
+    <meta charset="UTF-8">
+    <title>404 — История не найдена | Kremil RP</title>
+    <style>
+        body {
+            background: #050505;
+            color: #f0f0f0;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 { font-family: 'Rajdhani', sans-serif; font-size: 8rem; color: #d4af37; margin: 0; }
+        p { font-size: 1.5rem; color: #888; margin-bottom: 2rem; }
+        a {
+            padding: 15px 30px;
+            border: 1px solid #d4af37;
+            color: #d4af37;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+        a:hover { background: #d4af37; color: #000; }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Похоже, эта страница скрыта в криминальных архивах...</p>
+    <a href="https://kremilrp-png.github.io/">Вернуться на главную</a>
+</body>
+
+</html>
