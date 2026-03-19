@@ -4,5 +4,5 @@ Disallow: /assets/
 Disallow: /src/
 Disallow: /README.md
 
-Sitemap: https://kremilrp-png.github.io/sitemap.xml
-Host: https://kremilrp-png.github.io/
+Sitemap: https://kremilrp.github.io/sitemap.xml
+Host: https://kremilrp.github.io/
