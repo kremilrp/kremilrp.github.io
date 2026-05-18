@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQ99TMWBE7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SQ99TMWBE7');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа-партнерство | Kremil RP</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Rajdhani:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --bg-card: #0d0d0d;
+            --highlight: #e0e0e0;     /* Серебро вместо золота */
+            --highlight-dark: #888888;
+            --border: #222;
+            --text-main: #f0f0f0;
+            --text-muted: #666;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background-color: var(--bg-dark); 
+            color: var(--text-main); 
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Nav */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 5%; background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(10px);
+            position: fixed; width: 100%; z-index: 1000; border-bottom: 1px solid var(--border);
+        }
+        .nav-logo { font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: 2px; }
+        .nav-logo span { color: var(--highlight); }
+
+        .wrapper { max-width: 1100px; margin: 0 auto; padding: 140px 5% 80px; }
+
+        .header { text-align: center; margin-bottom: 50px; }
+        .header h1 { font-family: 'Rajdhani', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); text-transform: uppercase; letter-spacing: 3px; font-weight: 800; }
+        .header h1 span { color: var(--highlight); }
+        .header p { color: #666; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; margin-top: 10px; font-weight: 600; }
+
+        /* Сетка уровней с выравниванием по высоте */
+        .levels-grid { 
+            display: flex; 
+            gap: 25px; 
+            margin-bottom: 50px; 
+            flex-wrap: wrap;
+        }
+        .level-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 30px;
+            position: relative;
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .level-card:hover { border-color: var(--highlight); }
+        .level-badge {
+            background: #222; color: #fff;
+            padding: 5px 12px; font-weight: 700; font-size: 0.65rem;
+            position: absolute; top: 0; right: 0; text-transform: uppercase;
+            border-left: 1px solid var(--border); border-bottom: 1px solid var(--border);
+        }
+        .level-card h3 { font-family: 'Rajdhani', sans-serif; color: var(--highlight); font-size: 1.4rem; margin-bottom: 15px; text-transform: uppercase; font-weight: 700; }
+        .req-list { list-style: none; font-size: 0.85rem; color: #aaa; margin-bottom: 15px; }
+        .req-list li { margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px; }
+        .req-list li i { color: var(--highlight-dark); margin-top: 4px; font-size: 0.8rem; }
+        .platform-sep { margin: 10px 0; border-top: 1px solid #1c1c1c; padding-top: 10px; font-weight: 700; color: #888; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Блок правил */
+        .rules-box {
+            background: #090909; border: 1px solid var(--border); padding: 35px; margin-bottom: 50px;
+        }
+        .rules-box h2 { font-family: 'Rajdhani', sans-serif; margin-bottom: 20px; color: #fff; text-transform: uppercase; font-size: 1.3rem; letter-spacing: 1px; }
+        .rules-box li { font-size: 0.85rem; color: #aaa; margin-bottom: 12px; list-style-type: square; margin-left: 15px; }
+
+        /* Форма заявки */
+        .form-info {
+            background: var(--bg-card); padding: 35px; border: 1px solid var(--border); border-left: 4px solid var(--highlight-dark);
+        }
+        .form-info h3 { font-family: 'Rajdhani', sans-serif; font-size: 1.2rem; letter-spacing: 1px; margin-bottom: 15px; }
+        .copy-text {
+            background: #050505; padding: 20px; border: 1px solid #1c1c1c; 
+            font-family: monospace; color: #ccc; margin: 20px 0;
+            white-space: pre-wrap; font-size: 0.85rem;
+        }
+
+        .note { font-size: 0.8rem; color: #555; margin-top: 10px; }
+
+        .vk-link {
+            display: inline-block; margin-top: 15px; color: #fff; text-decoration: none;
+            font-size: 0.85rem; font-weight: 700; border: 1px solid var(--border); padding: 12px 25px; transition: 0.3s;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .vk-link:hover { border-color: var(--highlight); color: var(--highlight); background: #000; }
+
+        footer { text-align: center; padding: 50px 0; border-top: 1px solid var(--border); font-size: 0.75rem; color: #333; }
+
+        @media (max-width: 768px) { .wrapper { padding-top: 110px; } .levels-grid { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">KREMIL <span>RP</span></a>
+    <div style="font-size: 0.8rem; font-weight: 600;"><a href="index.html" style="color: #888; text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#888'">ГЛАВНАЯ</a></div>
+</nav>
+
+<div class="wrapper">
+    <header class="header" data-aos="fade-down">
+        <h1>МЕДИА <span>ПАРТНЕРСТВО</span></h1>
+        <p>Критерии сотрудничества с авторами контента</p>
+    </header>
+
+    <div class="levels-grid">
+        <div class="level-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="level-badge">Этап I</div>
+            <h3>LEVEL I</h3>
+            
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 50+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 3+ видео по проекту</li>
+                <li><i class="fas fa-minus"></i> От 500 просмотров на роликах</li>
+            </ul>
+            
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 20+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 2+ видео (длительность 20с+)</li>
+            </ul>
+        </div>
+
+        <div class="level-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="level-badge">Этап II</div>
+            <h3>LEVEL II</h3>
+            
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 200+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 10+ видео (от 500 просм. каждое)</li>
+                <li><i class="fas fa-minus"></i> 1 месяц сотрудничества</li>
+            </ul>
+            
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 70+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 7+ видео (от 50 просм. каждое)</li>
+                <li><i class="fas fa-minus"></i> 1 месяц сотрудничества</li>
+            </ul>
+        </div>
+
+        <div class="level-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="level-badge">Этап III</div>
+            <h3>LEVEL III</h3>
+            
+            <div class="platform-sep">TikTok / Shorts</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 1000+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 50+ видео</li>
+                <li><i class="fas fa-minus"></i> 10 роликов от 5000 просмотров</li>
+            </ul>
+            
+            <div class="platform-sep">YouTube / Rutube</div>
+            <ul class="req-list">
+                <li><i class="fas fa-minus"></i> 500+ подписчиков</li>
+                <li><i class="fas fa-minus"></i> 30+ видео (длительность 5м+)</li>
+                <li><i class="fas fa-minus"></i> От 500 просмотров на каждом</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="rules-box" data-aos="fade-up">
+        <h2>Правила для партнеров</h2>
+        <ul>
+            <li><strong>Эксклюзивность:</strong> Запрещено параллельное освещение других проектов в жанре CRMP/SAMP.</li>
+            <li><strong>Тематика:</strong> Публикуемый контент должен быть напрямую связан с Kremil RP или игровой индустрией.</li>
+            <li><strong>Репутация:</strong> Не допускается деструктивное поведение, прямые оскорбления аудитории и намеренная дискредитация проекта.</li>
+            <li><strong>Активность:</strong> Отсутствие активности в течение 2 месяцев ведет к снятию статуса партнера.</li>
+            <li><strong>Восстановление:</strong> В течение недели после снятия за неактивность можно вернуться на прежний уровень. Позже — возврат только на начальный LEVEL I.</li>
+            <li><strong>Альтернативные платформы:</strong> Авторы из VK Видео, Yappy и других сервисов рассматриваются в индивидуальном порядке.</li>
+        </ul>
+    </section>
+
+    <div class="form-info" data-aos="fade-up">
+        <h3>ПОДАЧА ЗАЯВКИ</h3>
+        <p>Заявки принимаются в сообщениях официального сообщества VK по указанной форме:</p>
+        <div class="copy-text">#Сотрудничество
+1. Ваш ник:
+2. Ваш сервер:
+3. Расскажите о себе: (мин. 50 символов)
+4. Ваша платформа:
+5. Ваш канал: (ссылка)
+6. Ваша статистика канала: (скриншоты)</div>
+        
+        <p class="note">Примечание: Если текущие показатели незначительно ниже указанных в требованиях, заявка также может быть рассмотрена на основе качества монтажа.</p>
+        
+        <a href="https://vk.com/kremilrp" target="_blank" class="vk-link"><i class="fab fa-vk"></i> Отправить заявку</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023-2026 Kremil RolePlay | Media Partnership Department
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ once: true, duration: 800 });</script>
+
+</body>
+</html>
