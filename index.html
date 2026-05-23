@@ -2,6 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <script>
+        // Проверка ОС устройства и переадресация
+        (function() {
+            var ua = navigator.userAgent;
+            if (/Android/i.test(ua)) {
+                window.location.replace('android.html');
+            } else if (/Mac/i.test(ua) || (/Linux/i.test(ua) && !/Android/i.test(ua))) {
+                window.location.replace('mi.html');
+            }
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Kremil RP | Играй с нами</title>
@@ -592,7 +603,7 @@
 
         <details class="faq-item" data-aos="fade-up" data-aos-delay="200">
             <summary>Восстановление доступа к аккаунту</summary>
-            <p>If аккаунт привязан к VK или Email, восстановление доступно через кнопку "Забыли пароль?" в лаунчере. В ином случае обратитесь к Техническому Администратору в группе VK.</p>
+            <p>Если аккаунт привязан к VK или Email, восстановление доступно через кнопку "Забыли пароль?" в лаунчере. В ином случае обратитесь к Техническому Администратору в группе VK.</p>
         </details>
 
         <details class="faq-item" data-aos="fade-up" data-aos-delay="250">

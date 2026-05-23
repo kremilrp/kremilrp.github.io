@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kremil RP | Android</title>
+    <meta name="description" content="Kremil RP для мобильных устройств под управлением Android.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Rajdhani:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #050505;       /* Глубокий черный */
+            --bg-light: #121212;      /* Темно-серый для карточек/блоков */
+            --accent: #4a4a4a;        /* Серый акцент */
+            --highlight: #e0e0e0;     /* Серебряный/белый */
+            --text-main: #f0f0f0;
+            --text-muted: #888888;
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            outline: none; 
+            border-radius: 0 !important; /* Строгие острые углы по предпочтению */
+        }
+        
+        html, body { 
+            height: 100%;
+            background-color: var(--bg-dark);
+            color: var(--text-main); 
+            font-family: 'Montserrat', sans-serif; 
+            overflow: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            background: radial-gradient(circle, rgba(18,18,18,0) 50%, rgba(5,5,5,1) 100%);
+        }
+
+        .content-box {
+            max-width: 500px;
+            width: 100%;
+            background: var(--bg-light);
+            border: 1px solid var(--accent);
+            padding: 50px 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        }
+
+        .logo-box {
+            font-size: 3rem;
+            color: var(--highlight);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .social-btn {
+            padding: 16px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: 0.3s;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-vk {
+            background: var(--highlight);
+            color: #000;
+            border-color: var(--highlight);
+        }
+
+        .btn-vk:hover {
+            background: transparent;
+            color: var(--highlight);
+        }
+
+        .btn-tg {
+            background: transparent;
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .btn-tg:hover {
+            border-color: #fff;
+            background: #fff;
+            color: #000;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: #444;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content-box" data-aos="zoom-in" data-aos-duration="600">
+        <div class="logo-box">
+            <i class="fab fa-android"></i>
+        </div>
+        <h1>Kremil RP Mobile</h1>
+        <p>Добро пожаловать. Вся актуальная информация о мобильной версии проекта, свежие анонсы и этапы тестирования публикуются в наших официальных сообществах.</p>
+        
+        <div class="btn-stack">
+            <a href="https://vk.com/kremilrp" target="_blank" class="social-btn btn-vk">
+                <i class="fab fa-vk"></i> Сообщество VK
+            </a>
+            <a href="https://t.me/kremilrp" target="_blank" class="social-btn btn-tg">
+                <i class="fab fa-telegram-plane"></i> Канал Telegram
+            </a>
+        </div>
+
+        <div class="footer-note">
+            &copy; Kremil RolePlay Project
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true });
+</script>
+
+</body>
+</html>
